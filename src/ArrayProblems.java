@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 public class ArrayProblems {
-    boolean containsDuplicate(int[] arr){
+    boolean containsDuplicate(int[] arr) {
         // Given an integer array nums, return true if any value appears at least twice in the array, and return false
         // if every element is distinct.
         // Solution 1: Using HashSets.
@@ -10,8 +10,8 @@ public class ArrayProblems {
         // Created the hashset to hold all array elements
 //        for(int i: arr){
 //            set.add(i);
-            //Iterating over array and adding each element into set. If any duplicate element is there it won`t be added
-            // twice into set, hence size of set would be equal to number of elements only if no duplicates are there.
+        //Iterating over array and adding each element into set. If any duplicate element is there it won`t be added
+        // twice into set, hence size of set would be equal to number of elements only if no duplicates are there.
 //        }
         // Checking actually size of set is equal to number of elements in array.
         // If so we return duplicates aren`t there
@@ -39,8 +39,8 @@ public class ArrayProblems {
         //element is equal we can conclude that array contains duplicate, but we if we reach the end and do not encounter
         // any such element we can conclude array does not contain duplicates.
         Arrays.sort(arr);
-        for(int i=0;i<arr.length-1;i++){
-            if(arr[i]==arr[i+1]){
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] == arr[i + 1]) {
                 return true;
             }
         }
